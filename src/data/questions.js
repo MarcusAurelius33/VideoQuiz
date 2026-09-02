@@ -20,3 +20,5 @@ const data = [
         options: ["The Legend of Zelda: Ocarine of Time", "Super Mario 64", "Tomb Raider", "Crash Bandicoot"]
     },
 ]
+
+export default data
