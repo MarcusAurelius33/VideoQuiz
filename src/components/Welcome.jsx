@@ -10,7 +10,7 @@ const Welcome = () => {
 
   return (
     <div id='welcome'>
-        <div>Welcome</div>
+        <div>Seja bem vindo</div>
         <p>clique no botão abaixo para começar</p>
         <button onClick={() => dispatch({type: "CHANGE_STATE"})}>Iniciar</button>
         <img src={Quiz} alt="Início do quiz" />
