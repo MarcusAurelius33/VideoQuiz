@@ -6,6 +6,7 @@ import './App.css'
 import Question from './components/Question'
 import Welcome from './components/Welcome'
 import GameOver from './components/GameOver'
+import PickCategory from './components/PickCategory'
 
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -19,6 +20,7 @@ function App() {
     <h1>Quiz sobre Video Games</h1>
     {quizState.gameStage === "Start" && <Welcome/>}
     {quizState.gameStage === "Playing" && <Question/>} 
+    {quizState.gameStage === "Category" && <PickCategory/>}
     {quizState.gameStage === "End" && <GameOver/>}
    </div>
   )
