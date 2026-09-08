@@ -11,9 +11,11 @@
 }
 
 #question p {
+    font-size: 18px;
     margin-bottom: 1rem;
 }
 
 #question button {
     border: 2px solid #fff;
+    margin: .5rem;
 }
