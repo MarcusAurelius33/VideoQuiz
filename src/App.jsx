@@ -11,16 +11,12 @@ import PickCategory from './components/PickCategory'
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
 
-  useEffect(() => {
-      dispatch({ type: "REORDER_QUESTIONS" });
-  }, [])
-
   return (
    <div className='App'>
     <h1>Quiz sobre Video Games</h1>
     {quizState.gameStage === "Start" && <Welcome/>}
-    {quizState.gameStage === "Playing" && <Question/>} 
     {quizState.gameStage === "Category" && <PickCategory/>}
+    {quizState.gameStage === "Playing" && <Question/>} 
     {quizState.gameStage === "End" && <GameOver/>}
    </div>
   )
